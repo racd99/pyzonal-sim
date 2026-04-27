@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyzonal-sim"
+version = "0.0.1"
+description = "Python simulator of a zonal vehicle architecture with CAN-FD, LIN, and Ethernet buses"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "racd99" }
+]
+keywords = ["automotive", "simulation", "can", "lin", "ethernet", "zonal", "ev"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pyzonal*"]
